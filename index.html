@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2e30f62455.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./dist/css/style.min.css">
+    <title>Zadanie rekrutacyjne Adrespect</title>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg w-100 py-5 position-fixed top-0">
+        <div class="container">
+            <a class="navbar-brand" href="#" onclick="lenis.scrollTo('#header')"><img class="logo"
+                    src="./dist/img/LogoBig.jpg" alt="Logo" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="navbar__burger-inside">
+
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto gap-5 sm">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" href="#"">
+                            Oferta <i class=" fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item link-item py-2" href="#">Action</a></li>
+                            <li><a class="dropdown-item link-item py-2" href="#">Another action</a></li>
+                            <li><a class="dropdown-item link-item py-2" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <a class="nav-link link-item" href="#" onclick="lenis.scrollTo('#offer')">O firmie</a>
+                    <a class="nav-link link-item" href="#" onclick="lenis.scrollTo('#portfolio')">Realizacje</a>
+                    <a class="nav-link link-item" href="#" onclick="lenis.scrollTo('#contact')">Kontakt</a>
+                    <div class="nav__search">
+                        <div class="nav__search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="nav__search-input">
+                            <input type="text" placeholder="Search..." id="searchInput">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header" id="header">
+        <div class="slider d-flex overflow-hidden position-relative">
+            <div class="slider-move position-relative">
+                <div class="slider__box d-flex flex-column-reverse flex-md-row justify-content-center">
+                    <div class="slider__box-desc">
+
+                    </div>
+                    <div class="slider__box-img header-img">
+                        <img src="./dist/img/HeaderPhoto.jpg" alt="">
+                    </div>
+
+                    <div class="slider__box-content container">
+                        <h1>Nowoczesna aranżacja Twojego ogrodu</h1>
+                        <p>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy
+                            kompleksowy zakres usług indywidualnym podejściem do każdego projektu.</p>
+                        <div class="slider__box-btns">
+                            <button type="button" class="btn btn-success" onclick="lenis.scrollTo('#contact')">Skontaktuj się z nami</button>
+                            <button type="button" class="btn btn-outline-success" onclick="lenis.scrollTo('#portfolio')">Zobacz nasze
+                                    realizacje <i class="fa-solid fa-arrow-down"></i></button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="slider__box d-flex flex-column-reverse flex-md-row justify-content-center"">
+
+
+                    <div class="slider__box-desc">
+                        <h1>To jest drugi slide</h1>
+                    </div>
+                    <div class="slider__box-img header-img">
+                        <img src="./dist/img/HeaderPhoto.jpg" alt="">
+                    </div>
+
+                    <div class="slider__box-content container">
+                        <h1>To jest drugi slide</h1>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="slider__buttons">
+                <div class="slider__button-left">
+                    <img src="./dist/img/SliderLeft.png" alt="left arrow">
+                </div>
+                <div class="slider__button-right">
+                    <img src="./dist/img/SliderRight.png" alt="right arrow">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="offer d-flex flex-column align-items-center" id="offer">
+            <div class="container justify-content-center d-flex flex-column">
+                <div class="section__header">
+                    <p class="section__header-title">Oferta</p>
+                    <h2>Działamy <span>kompleksowo</span></h2>
+                    <p>Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody
+                        przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w
+                        życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. </p>
+                </div>
+                <div class="row justify-content-around offer__cards">
+                    <div class="offer__cards py-4">
+                        <div class="offer__card d-flex flex-column">
+                            <div class="offer__card-icon">
+                                <img src="./dist/img/PenIcon.png" alt="Pen icon">
+                            </div>
+                            <div class="offer__card-desc">
+                                <h3>Projekty</h3>
+                                <p>Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem
+                                    istniejącej przestrzeni.</p>
+                            </div>
+                            <div class="offer__card-btn">
+                                <a href="#">Dowiedz się więcej <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="offer__card d-flex flex-column">
+                            <div class="offer__card-icon">
+                                <img src="./dist/img/EyeIcon.png" alt="Pen icon">
+                            </div>
+                            <div class="offer__card-desc">
+                                <h3>Wizualizacje</h3>
+                                <p>Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w
+                                    technologii 3D.</p>
+                            </div>
+                            <div class="offer__card-btn">
+                                <a href="#">Dowiedz się więcej <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="offer__card d-flex flex-column">
+                            <div class="offer__card-icon">
+                                <img src="./dist/img/StarsIcon.png" alt="Pen icon">
+                            </div>
+                            <div class="offer__card-desc">
+                                <h3>Realizacje</h3>
+                                <p>Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych
+                                    technologii.</p>
+                            </div>
+                            <div class="offer__card-btn">
+                                <a href="#">Dowiedz się więcej <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offer__hero d-flex flex-column flex-md-row">
+                <div class="offer__hero-img">
+                    <img src="./dist/img/aboutHero.png" alt="home">
+                </div>
+                <div class="offer__hero-desc d-flex flex-column">
+                    <div class="offer__hero-content">
+                        <div class="section__header">
+                            <p class="section__header-title">O firmie</p>
+                            <h2>Tworzymy <span>z pasją</span></h2>
+                            <p>Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci
+                                oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta.
+                                Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm,
+                                geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do
+                                współczesnego trybu życia.</p>
+                        </div>
+
+                        <button type="button" class="btn btn-outline-light"><a href="#portfolio">Poznaj nas bliżej <i
+                                    class="fa-solid fa-arrow-right"></i></a></button>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="portfolio d-flex flex-column align-items-center" id="portfolio">
+            <div class="container px-4">
+                <div class="section__header px-5">
+                    <p class="section__header-title">Realizacje</p>
+                    <h2>Nasze <span>projekty</span></h2>
+                </div>
+            </div>
+            <div class="portfolio__gallery">
+                <img tabindex="0" src="./dist/img/Gallery1.jpg" alt="garden" class="portfolio__gallery-item">
+                <img tabindex="0" src="./dist/img/Gallery2.jpg" alt="pool" class="portfolio__gallery-item">
+                <img tabindex="0" src="./dist/img/Gallery3.jpg" alt="taras" class="portfolio__gallery-item">
+                <img tabindex="0" src="./dist/img/Gallery4.jpg" alt="tree" class="portfolio__gallery-item">
+                <img tabindex="0" src="./dist/img/Gallery5.jpg" alt="fish" class="portfolio__gallery-item">
+                <img tabindex="0" src="./dist/img/Gallery6.jpg" alt="wooden taras" class="portfolio__gallery-item">
+                <img tabindex="0" src="./dist/img/Gallery7.jpg" alt="garden" class="portfolio__gallery-item">
+                <img tabindex="0" src="./dist/img/Gallery8.jpg" alt="garden" class="portfolio__gallery-item">
+                <img tabindex="0" src="./dist/img/Gallery9.jpg" alt="garden roof" class="portfolio__gallery-item">
+                <img tabindex="0" src="./dist/img/Gallery10.jpeg" alt="garden" class="portfolio__gallery-item">
+                <img tabindex="0" src="./dist/img/Gallery11.jpeg" alt="garden" class="portfolio__gallery-item">
+                <img tabindex="0" src="./dist/img/Gallery12.jpeg" alt="garden" class="portfolio__gallery-item">
+                <img tabindex="0" src="./dist/img/Gallery13.jpeg" alt="garden" class="portfolio__gallery-item">
+                <img tabindex="0" src="./dist/img/Gallery14.jpeg" alt="garden" class="portfolio__gallery-item">
+                <img tabindex="0" src="./dist/img/Gallery15.jpeg" alt="garden" class="portfolio__gallery-item">
+                <img tabindex="0" src="./dist/img/Gallery16.jpeg" alt="garden" class="portfolio__gallery-item">
+            </div>
+            <div class="popup hidden">
+                <button class="popup__close shadow-lg">&times;</button>
+                <img src="" alt="garden image" class="popup__img">
+                <button class="popup__arrow popup__arrow-left"><i class="fa-solid fa-caret-left"></i></button>
+                <button class="popup__arrow popup__arrow-right"><i class="fa-solid fa-caret-right"></i></button>
+            </div>
+            <div class="portfolio__gallery-btns d-flex justify-content-center">
+                <div class="portfolio__gallery-btn">
+                    <button type="button" class="btn btn-outline-secondary open-gallery">Rozwiń <i
+                            class="fa-solid fa-arrow-down"></i></button>
+                    <button type="button" class="btn btn-outline-secondary close-gallery">Zwiń <i
+                            class="fa-solid fa-arrow-up"></i></button>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="container d-flex flex-column flex-md-row align-items-center justify-content-center contact__container">
+                <div class="section__header">
+                    <h2>Zostańmy w kontakcie!</h2>
+                    <h2>Znajdziesz nas na <span>Instagramie</span></h2>
+                </div>
+                <div class="contact__btn d-flex flex-column gap-4">
+                    <p>Śledź nasze najnowsze realizacje</p>
+                    <button type="button" class="btn btn-light">Instagram</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container d-flex flex-column align-items-center">
+            <div
+                class="footer__header w-100 d-flex flex-column flex-lg-row justify-content-lg-between align-items-sm-center align-items-md-center">
+                <div class="footer__header-logo py-4">
+                    <img src="./dist/img/LogoWite.png" alt="company logo">
+                </div>
+                <div class="footer__header-content d-flex">
+                    <p>Daj znać, co możemy dla Ciebie zrobić!</p>
+                    <button type="button" class="btn btn-success">Skontaktuj się z nami</button>
+                </div>
+            </div>
+            <div class="footer__underline"></div>
+            <div class="footer__links d-flex w-100 flex-lg-row justify-content-lg-between align-items-center">
+                <div class="footer__links-link d-flex gap-5">
+                    <a href="#" class="fs-4 text-light">Kontakt</a>
+                    <a href="#" class="fs-4 text-light">Facebook</a>
+                    <a href="#" class="fs-4 text-light">Instagram</a>
+                    <a href="#" class="fs-4 text-light">LinkedIn</a>
+                </div>
+                <div class="footer__links-contact d-flex gap-5">
+                    <p class="text-light fs-4">000-000-000</p>
+                    <p class="text-light fs-4">giarddesign@kontakt.pl</p>
+                </div>
+            </div>
+            <div
+                class="footer__copyrights w-100 d-flex flex-column flex-lg-row justify-content-lg-between align-items-center">
+                <div class="footer__copyrights-content">
+                    <p class="text-light fs-4 pt-3">Prawa zatrzeżone &copy; 2022</p>
+                </div>
+                <div class="footer__copyrights-madeby d-flex justify-content-center align-items-center gap-4">
+                    <p class="text-light fs-4">made by</p>
+                    <img src="./dist/img/MadeBy.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="http://unpkg.com/split-type"></script>
+    <script src="https://cdn.jsdelivr.net/npm/macy@2.5.1/dist/macy.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="./dist/js/anim.min.js"></script>
+    <script src="./dist/js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+@media (min-width: 768px) {
+	.btn {
+		font-size: 1.2rem;
+		padding: 10px 20px;
+	}
+	.section__header {
+		width: 80%;
+		h2 {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 4.8rem;
+			span {
+				font-family: 'Inter', sans-serif;
+				font-style: italic;
+			}
+		}
+		p {
+			width: 70%;
+		}
+	}
+	.nav__search {
+		&-active {
+			width: 300px;
+		}
+		&-input {
+			width: 260px;
+		}
+	}
+	.header {
+		height: 820px;
+		.slider {
+			&__box {
+				gap: 64px;
+				&-img {
+					width: 45%;
+					height: 100%;
+					flex-shrink: 0;
+				}
+				&-desc {
+					// width: 50%;
+					height: 100%;
+				}
+				&-content {
+					top: 50%;
+					width: 100%;
+					h1 {
+						width: 40%;
+						font-size: 3rem;
+						line-height: 50px;
+					}
+					p {
+						width: 40%;
+						padding-top: 44px;
+						padding-bottom: 72px;
+						font-size: 1.6rem;
+					}
+				}
+			}
+			&__buttons {
+				padding: 24px 32px;
+			}
+			&__button-right,
+			&__button-left {
+				padding: 0.5em;
+			}
+			&__box-btns {
+				gap: 16px;
+			}
+		}
+	}
+	.offer {
+		&__cards {
+			justify-content: flex-start;
+			gap: 64px;
+		}
+		&__card {
+			width: 378px;
+			height: 370px;
+			padding: 48px 40px;
+			border-radius: 28px;
+		}
+		&__hero {
+			height: 720px;
+			&-img {
+				height: 100%;
+			}
+			&-desc {
+				height: 100%;
+			}
+			&-content {
+				top: 50%;
+				left: 0%;
+				transform: translateY(-50%);
+				width: 100%;
+				max-width: 627px;
+				p {
+					font-size: 1.4rem;
+				}
+			}
+		}
+	}
+	.contact {
+		.container {
+			width: 90%;
+			padding: 80px 40px;
+		}
+	}
+	.footer {
+		&__header {
+			gap: 5em;
+			&-content {
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-between;
+				gap: 24px;
+				width: 470px;
+				p {
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+				button {
+					position: absolute;
+					right: 0;
+					top: 0;
+					transform: translateY(-50%);
+				}
+			}
+		}
+		&__underline {
+			margin: 62px 0px;
+			width: 100%;
+			height: 1px;
+			background-color: $lightColor;
+		}
+	}
+}

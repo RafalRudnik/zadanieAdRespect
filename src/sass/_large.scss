@@ -1,0 +1,71 @@
+@media (min-width: 992px) {
+	.btn {
+		font-size: 1.6rem;
+		padding: 14px 24px;
+	}
+	.navbar {
+		&-collapse {
+			height: fit-content;
+			padding-top: 0;
+		}
+	}
+	.header {
+		.slider {
+			&__box {
+				&-content {
+					h1 {
+						font-size: 6rem;
+						line-height: 70px;
+					}
+				}
+			}
+			&__box-btns {
+				gap: 36px;
+			}
+		}
+	}
+	.offer {
+		&__cards {
+			justify-content: space-evenly;
+		}
+		&__card {
+			flex-shrink: 1;
+		}
+		&__hero {
+			height: 720px;
+			&-img {
+				width: 100%;
+				height: 100%;
+				transform-origin: bottom;
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: center;
+				}
+			}
+			&-desc {
+				position: relative;
+				width: 100%;
+				height: 100%;
+			}
+			&-content {
+				max-width: 627px;
+				padding-left: 96px;
+			}
+		}
+	}
+	.contact {
+		.container {
+			width: 80%;
+			padding: 120px 110px;
+		}
+	}
+	.footer {
+		&__header {
+			&-content {
+				width: 550px;
+			}
+		}
+	}
+}
