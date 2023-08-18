@@ -100,7 +100,7 @@ offerCards.forEach((card) => {
 			ease: 'easeInOut',
 			scrollTrigger: {
 				trigger: card,
-				start: 'top 75%',
+				start: 'top 80%',
 			},
 		}
 	);

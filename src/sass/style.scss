@@ -630,6 +630,12 @@ html.lenis {
 			}
 		}
 	}
+	.phone-no {
+		a {
+			color: $lightColor !important;
+			text-decoration: none;
+		}
+	}
 }
 
 @import './small';
